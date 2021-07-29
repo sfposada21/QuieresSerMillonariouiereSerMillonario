@@ -1,0 +1,215 @@
+
+
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+    
+    min-height: 100%;
+}
+
+html {
+    height: 150%;
+}
+
+.grid-container > * {
+box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
+border-radius: 0.5 px;
+padding: 10px;
+text-align: center;
+}
+
+.grid-container {
+display: grid;
+gap: 2px;
+grid-template: 
+    "header1" 80px
+    "navbar1" 50px
+    "main1" 300px
+    "sidebar1" 200px
+    "sidebar2" 200px
+    "footer1" 50px
+}
+
+.header1{
+grid-area: header1;
+background-color: rgba(82, 112, 204, 0.979);
+}
+
+.navbar1{
+grid-area: navbar1;
+background-color: rgb(9, 18, 48);
+}
+
+.main1{
+grid-area: main1;
+/* background-color: rgb(183, 210, 236); */
+
+}
+
+.sidebar1{
+grid-area: sidebar1;
+background-color: rgba(82, 112, 204, 0.979);
+}
+.sidebar2{
+grid-area: sidebar2;
+background-color: rgba(82, 112, 204, 0.979);
+}
+    
+
+.footer1{
+grid-area: footer1;
+background-color: rgb(0, 0, 0);
+}
+
+@media (min-width: 600px){
+ .grid-container{     
+     background-color: rgb(212, 212, 224);
+     grid-template: 
+    "header1 header1 header1" 100px 
+    "navbar1 navbar1 navbar1" 50px 
+    "sidebar1 main1 sidebar2"  auto
+    "footer1 footer1 footer1" 200px /  
+    200px auto 200px;
+ }
+}
+
+@media (min-width: 900){
+    .grid-container{     
+        background-color: rgb(212, 212, 224);
+        grid-template: 
+        "header1 header1 header1" 100px 
+        "navbar1 navbar1 navbar1" 50px 
+        "sidebar1 main1 sidebar2"  auto
+        "footer1 footer1 footer1" 200px /  
+        200px auto 200px ;
+    }
+}
+
+
+
+footer{
+    font-family: 'Roboto', sans-serif;
+    color: var(--textoblanco);
+}
+.footer-content {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p {
+    max-width: 500px;
+    margin:5px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+
+
+@media (min-width: 600){ 
+.container-grid{     
+    background-color: rgb(212, 212, 224);
+    grid-template: 
+    "grid-pregunta" 60%
+    "grid-A" 60%
+    "grid-B" 60%
+    " grid-c "  60%
+    "grid-d" 60%
+}}
+
+
+
+.container-grid{    
+        display: grid;
+        gap: 0.5px;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        background-color: rgb(212, 212, 224);
+        grid-template: 
+        "grid-pregunta grid-pregunta" 60% 
+        "grid-A grid-B" 60%  
+        "grid-C grid-D" 60%   
+}
+
+.grid-pregunta{
+grid-area: grid-pregunta;
+background-color: rgb(9, 18, 48);
+}
+.grid-A{
+grid-area: grid-A;
+background-color: rgb(9, 18, 48);
+}
+.grid-B{
+grid-area: grid-B;
+background-color: rgb(9, 18, 48);
+
+}
+.grid-C{
+grid-area: grid-C;
+background-color: rgb(9, 18, 48);
+}
+.grid-D{
+grid-area: grid-D;
+background-color: rgb(9, 18, 48);
+}
+                                                            
+
+
+
+p {
+text-align: center;
+color: rgb(187, 223, 238);
+}
+
+button{
+    width:200px;
+    background-color:rgb(148, 114, 240);
+    color: white;
+    height:50px;
+    font-size:5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+    color: rgb(78, 20, 153);
+    
+}
+h4{   
+    text-align: center;
+    color: rgb(187, 223, 238);
+}
+
+.btnStar{
+    width: 60%;
+    background-color:rgb(179, 161, 230);
+    color: white;
+    height:80px;
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+}
+
+a{
+    color: white;
+}
