@@ -46,10 +46,10 @@ let respuestas = [
     ["A. Alegre ", "B. Amistosa ", "C. Colaboradora", "D. Toxica " ],
     ["A. Morenito", "B. Amargado", "C. Chevere ", "D. Triste d" ],
     ["A. Rio Yangtsé", "B. Rio Amazonas", "C. Rio Nilo", "D. Rio Danubio" ],
-    ["A. Vaticano ", "B. Japon ", "C. Corea del Norte ", "D. Andarro " ]
-    ["A. China ", "B. USA ", "C. America ", "D. Rusia " ]
-    ["A. Venecia ", "B. Roma ", "C. Francia ", "D. Florencia " ]
-    ["A. Cataratas de Iguazú ", "B. Cataratas del Niáraga ", "C. El Salto del Ángel ", "D. Cataratas del Yesuht " ]
+    ["A. Vaticano ", "B. Japon ", "C. Corea del Norte ", "D. Andarro " ],
+    ["A. China ", "B. USA ", "C. America ", "D. Rusia " ],
+    ["A. Venecia ", "B. Roma ", "C. Francia ", "D. Florencia " ],
+    ["A. Cataratas de Iguazú ", "B. Cataratas del Niáraga ", "C. El Salto del Ángel ", "D. Cataratas del Yesuht " ],
     ["A. K1 ", "B. K2 ", "C. K3 ", "D. K4 " ]
 ]
 
@@ -95,7 +95,7 @@ return Math.round(Math.random()*(1+max-min)+min)
 const activar = (opcion) => {
     if (Correctas[numeroActual] == opcion+1) {
         dinero += 10000;
-        alert("Correcto, dinero en bolsa : $" + dinero + " pesos ")
+        alert("Correcto, Has ganado $ 10000 C.O ")
         btndinero.innerHTML = dinero
         nuevaPregunta();
     } else {
