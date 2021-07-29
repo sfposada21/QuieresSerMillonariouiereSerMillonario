@@ -16,18 +16,22 @@ let dinero = 0;
 let dinerotemporal = 0;
 
 let preguntas = [    
-    "¿ Si 2+2 =4, Cual es la masa del Sol? ",
-    "¿ Que pasaria si pinocho dice: me va a crecer la nariz? ",
-    "¿ Si Zeus lucha contra Odin, que pasa ? ",
-    "¿ Capital de Colombia? ",
-    "¿ te esta gustando este juego ? ",
+    "¿Si 2+2 =4, Cual es la masa del Sol? ",
+    "¿Que pasaria si pinocho dice: me va a crecer la nariz? ",
+    "¿Si Zeus lucha contra Odin, que pasa ? ",
+    "¿Capital de Colombia? ",
+    "¿te esta gustando este juego ? ",
     " Hay un terremoto, necesitas guardar la informacion ",
     " Bonus: 1 + 1 ",
-    "¿ Cuantos oceanos hay en la Tierra ? ",
-    "¿ Como es la comunidad de LOL ? ",
+    "¿Cuantos oceanos hay en la Tierra ? ",
+    "¿Como es la comunidad de LOL ? ",
     " En colombia que significa *melo*",
-    "¿ Cual el rio mas largo del mundo? ",
-    "¿ Cuál es la nación más pequeña del mundo? ",
+    "¿Cual el rio mas largo del mundo? ",
+    "¿Cuál es la nación más pequeña del mundo? ",
+    "¿Cuál es el país más grande del mundo ?",
+    "¿Cuál es la ciudad italiana conocida como «la novia del mar» ?",
+    "¿Cuál es la cascada más alta del mundo ?",
+    "¿Cuál es la segunda montaña más alta del mundo?"
 ]
 
 let respuestas = [
@@ -43,6 +47,10 @@ let respuestas = [
     ["A. Morenito", "B. Amargado", "C. Chevere ", "D. Triste d" ],
     ["A. Rio Yangtsé", "B. Rio Amazonas", "C. Rio Nilo", "D. Rio Danubio" ],
     ["A. Vaticano ", "B. Japon ", "C. Corea del Norte ", "D. Andarro " ]
+    ["A. China ", "B. USA ", "C. America ", "D. Rusia " ]
+    ["A. Venecia ", "B. Roma ", "C. Francia ", "D. Florencia " ]
+    ["A. Cataratas de Iguazú ", "B. Cataratas del Niáraga ", "C. El Salto del Ángel ", "D. Cataratas del Yesuht " ]
+    ["A. K1 ", "B. K2 ", "C. K3 ", "D. K4 " ]
 ]
 
 
@@ -59,13 +67,17 @@ let Correctas = [
     3,
     2,
     1,
+    4,
+    1,
+    3,
+    2
 ]
 
 
 // Funciones
 
 const nuevaPregunta = () => {
-    let numero = generateRandom(0,11);
+    let numero = generateRandom(0,15);
     habilitarBotones = 1;
     numeroActual = numero; 
     pregunta.innerHTML = preguntas[numero];
