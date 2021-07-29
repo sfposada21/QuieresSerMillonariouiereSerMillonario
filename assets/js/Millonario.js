@@ -128,8 +128,14 @@ btnStart.onclick = function (){
 btnfin.onclick = function (){
     habilitar = 0;
     habilitarBotones = 0;
-    alert("Te has retirado, dinero en bolsa : $" + dinero + " pesos ")
+    pregunta.innerHTML = " ¿Quieres Volver a Jugar? ";
+    btnA.innerHTML = "<= dale en el click";
+    btnB.innerHTML = " talvez ";
+    btnC.innerHTML = " no ";
+    btnD.innerHTML = " si ";
+    alert("has retirado, dinero en bolsa : $" + dinero + " pesos ")
     dinero = 0;
+    btndinero.innerHTML = dinero
 }
 
 
